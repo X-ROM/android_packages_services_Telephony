@@ -15,6 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
     <string name="call_notif_unconditionalCF">Onvoorwaardelike oproep aanstuuring aktief</string>
     <string name="call_notif_conditionalCF">Voorwaardelike oproep aanstuuring aktief</string>
     <string name="call_notif_MOcall_forwarding">Uitgaande oproep word aangestuur</string>
@@ -43,10 +44,15 @@
     <string name="blacklist_call_notification_multiple"><xliff:g id="count">%d</xliff:g> oproepe is geblokkeer</string>
     <string name="blacklist_message_notification">\'n Boodskap van %s geblokkeer</string>
     <string name="blacklist_message_notification_private_number">\'n Boodskap van \'n privaat nommer geblokkeer</string>
+=======
+    <string name="blacklist_message_notification">\'n Boodskap van %s geblokkeer</string>
+    <string name="blacklist_message_notification_private_number">\'n Boodskap van \'n private nommer geblokkeer</string>
+>>>>>>> 5e1af87... Revert "Revert "Move message blacklist to framework (2/3).""
     <string name="blacklist_message_notification_unknown_number">\'n Boodskap van onbekende nommer %s geblokkeer</string>
     <string name="blacklist_message_notification_multiple"><xliff:g id="count">%d</xliff:g> boodskappe is geblokkeer</string>
     <string name="blacklist_notification_list_private">Privaat</string>
     <string name="unblock_number">Onblokkeer</string>
+<<<<<<< HEAD
     <string name="blacklist_title">Swartlys</string>
     <string name="blacklist_summary_disabled">Deaktiveer</string>
     <string name="blacklist_summary">Inkomende oproepe van telefoonnommers in die swartlys sal geblokkeer word.</string>
@@ -60,4 +66,6 @@
     <string name="noise_suppression_summary">Aktiveer geraas onderdrukking vir oproepe</string>
     <string name="throttle_status_subtext"><xliff:g id="used">%1$s</xliff:g> (<xliff:g id="used">%2$d</xliff:g>\u066A) van <xliff:g id="used">%3$s</xliff:g> tydper maksimum\nVolgende tydperk begin in <xliff:g id="used">%4$d</xliff:g> dae (<xliff:g id="used">%5$s</xliff:g>)</string>
     <string name="throttle_time_frame_subtext"><xliff:g id="used">%1$d</xliff:g>\u066A siklus verloop\nVolgende tydperk begin in <xliff:g id="used">%2$d</xliff:g> dae (<xliff:g id="used">%3$s</xliff:g>)</string>
+=======
+>>>>>>> 5e1af87... Revert "Revert "Move message blacklist to framework (2/3).""
 </resources>

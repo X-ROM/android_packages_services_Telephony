@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
+<<<<<<< HEAD
      Copyright (C) 2013-2014 The CyanogenMod Project
+=======
+     Copyright (C) 2013 The CyanogenMod Project
+>>>>>>> 5e1af87... Revert "Revert "Move message blacklist to framework (2/3).""
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,6 +19,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
     <string name="call_notif_unconditionalCF">Προώθηση κλήσεων άνευ όρων ενεργή</string>
     <string name="call_notif_conditionalCF">Προώθηση κλήσεων υπό όρους ενεργή</string>
     <string name="call_notif_MOcall_forwarding">Η εξερχόμενη κλήση προωθείται</string>
@@ -44,12 +49,15 @@
     <string name="blacklist_call_notification_private_number">Απορρίφθηκε κλήση από απόρρητο αριθμό</string>
     <string name="blacklist_call_notification_unknown_number">Απορρίφθηκε άγνωστος αριθμός %s</string>
     <string name="blacklist_call_notification_multiple">Απορρίφθηκαν <xliff:g id="count">%d</xliff:g> κλήσεις</string>
+=======
+>>>>>>> 5e1af87... Revert "Revert "Move message blacklist to framework (2/3).""
     <string name="blacklist_message_notification">Απορρίφθηκε μήνυμα από %s</string>
     <string name="blacklist_message_notification_private_number">Απορρίφθηκε μήνυμα από απόρρητο αριθμό</string>
     <string name="blacklist_message_notification_unknown_number">Απορρίφθηκε μήνυμα από άγνωστο αριθμό %s</string>
     <string name="blacklist_message_notification_multiple">Απορρίφθηκαν <xliff:g id="count">%d</xliff:g> μηνύματα</string>
     <string name="blacklist_notification_list_private">Απόρρητο</string>
     <string name="unblock_number">Ακύρωση φραγής</string>
+<<<<<<< HEAD
     <string name="mwi_notification_title">Ένδειξη αναμονής μηνύματος</string>
     <string name="mwi_notification_summary">Εμφάνιση ειδοποίησης μηνύματος τηλεφωνητή</string>
     <string name="perm_change_mobile_network">Επιλογή δικτύου (2G/3G)</string>
@@ -58,4 +66,6 @@
     <string name="phone_number_summary">Ορίστε τον αριθμό τηλεφώνου για αυτή τη συσκευή</string>
     <string name="noise_suppression_title">Καταστολή θορύβου</string>
     <string name="noise_suppression_summary">Ενεργοποίηση της καταστολής θορύβου κατά τη διάρκεια κλήσεων</string>
+=======
+>>>>>>> 5e1af87... Revert "Revert "Move message blacklist to framework (2/3).""
 </resources>
