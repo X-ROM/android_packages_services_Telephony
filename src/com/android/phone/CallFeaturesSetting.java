@@ -207,6 +207,7 @@ public class CallFeaturesSetting extends PreferenceActivity
             "sip_settings_category_key";
 
     private static final String BUTTON_NON_INTRUSIVE_INCALL_KEY = "button_non_intrusive_incall";
+    private static final String BUTTON_SMART_PHONE_CALL_KEY = "button_smart_phone_call";
 
     private static final String SWITCH_ENABLE_FORWARD_LOOKUP =
             "switch_enable_forward_lookup";
@@ -315,6 +316,7 @@ public class CallFeaturesSetting extends PreferenceActivity
     private SipSharedPreferences mSipSharedPreferences;
     private PreferenceScreen mButtonBlacklist;
     private CheckBoxPreference mNonIntrusiveInCall;
+    private CheckBoxPreference mSmartCall;
     private SwitchPreference mEnableForwardLookup;
     private SwitchPreference mEnablePeopleLookup;
     private SwitchPreference mEnableReverseLookup;
@@ -589,6 +591,10 @@ public class CallFeaturesSetting extends PreferenceActivity
         } else if (preference == mNonIntrusiveInCall){
             Settings.System.putInt(getContentResolver(), Settings.System.NON_INTRUSIVE_INCALL,
                     mNonIntrusiveInCall.isChecked() ? 1 : 0);
+            return true;
+        } else if (preference == mSmartCall){
+            Settings.System.putInt(getContentResolver(), Settings.System.SMART_PHONE_CALLER,
+                    mSmartCall.isChecked() ? 1 : 0);
             return true;
         }
         return false;
@@ -1724,6 +1730,10 @@ public class CallFeaturesSetting extends PreferenceActivity
         mNonIntrusiveInCall = (CheckBoxPreference) findPreference(BUTTON_NON_INTRUSIVE_INCALL_KEY);
         mNonIntrusiveInCall.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.NON_INTRUSIVE_INCALL, 1) == 0 ? false : true);
+
+        mSmartCall = (CheckBoxPreference) findPreference(BUTTON_SMART_PHONE_CALL_KEY);
+        mSmartCall.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.SMART_PHONE_CALLER, 0) != 0 ? true : false);
 
         mEnableForwardLookup = (SwitchPreference)
                 findPreference(SWITCH_ENABLE_FORWARD_LOOKUP);
