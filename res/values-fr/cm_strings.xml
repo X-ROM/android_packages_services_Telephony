@@ -14,10 +14,104 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<!-- Toasts for various transient network events -->
+    <!-- Toast text for Unconditional Call Forwarding enabled  -->
+    <string name="call_notif_unconditionalCF">Renvoi inconditionnel actif</string>
+    <!-- Toast text for Conditional Call Forwarding enabled  -->
+    <string name="call_notif_conditionalCF">Renvoi d\'appel conditionnel actif</string>
+    <!-- Toast text for a forwarded MO call  -->
+    <string name="call_notif_MOcall_forwarding">Appel sortant est renvoyé</string>
+    <!-- Toast text for MO call, when the caller & callee both belng to a CUG group -->
+    <string name="call_notif_cugcall">Appel en groupe fermé d\'utilisateurs</string>
+    <!-- In-call screen: status label when MO calls are barred -->
+    <string name="call_notif_outgoing_barred">Les appels sortants restreints</string>
+    <!-- Toast text for MO calls, when incoming calls are barred at remote party -->
+    <string name="call_notif_incoming_barred">Les appels entrants sont restreints à distance</string>
+    <!-- Toast text for MO calls when CLIR Suppression is rejected -->
+    <string name="call_notif_clir_suppression_rejected">Suppression de votre numéro rejeté par le réseau</string>
+    <!-- In-call screen: status label when MO call gets deflected to another party -->
+    <string name="call_notif_call_deflected">Appel renvoyé par la partie à distance</string>
+    <!-- Toast text for incoming call being forwarded to other remote party  -->
+    <string name="call_notif_MTcall_forwarding">Appel entrant est transféré</string>
+    <!-- Toast text for incoming call which is part of MultiParty Call -->
+    <string name="call_notif_multipartycall">Appel de groupe</string>
+    <!-- Toast text for incoming call which is answered,put on hold & then released -->
+    <string name="call_notif_callonhold_released">Appel réalisé à distance</string>
+    <!-- Toast text for incoming call forward check received -->
+    <string name="call_notif_forwardcheckreceived">L\'appel a été renvoyé</string>
+    <!-- Toast text for incoming call connecting through ECT -->
+    <string name="call_notif_callconnectingect">Appel réalisé à travers le transfert d\'appel explicite</string>
+    <!-- Toast text for incoming call connected through ECT -->
+    <string name="call_notif_callconnectedect">Appel réalisé à travers le transfert d\'appel explicite</string>
+	
+	<!-- Advanced Settings -->
+    <string name="incall_vibration">Vibrer appel entrant</string>
+    <string name="vibrate_outgoing">Vibrer sur réponse</string>
+    <string name="vibrate_call_waiting">Vibrer sur appel en attente</string>
+    <string name="vibrate_hangup">Vibrer au décroché</string>
+    <string name="vibrate_45">Vibrer chaque minute</string>
+    <string name="vibrate_45_sum">Vibre toutes les 45 secondes de chaque minute pendant les appels sortants</string>
+    <string name="show_ssn_label">Notification de l\'événement</string>
+    <string name="show_ssn_summary">Afficher une notification pour différents événements de réseau liés à la gestion des appels</string>
+
+
+    <!-- Blacklist preferences -->
+    <string name="blacklist_title">List noire</string>
+    <string name="blacklist_summary_disabled">Désactivé</string>
+    <string name="blacklist_summary">Les appels entrants provenant de numéros de téléphone dans la liste noire seront bloqués</string>
     <string name="blacklist_message_notification">Message de %s bloqué</string>
     <string name="blacklist_message_notification_private_number">Message d\'un numéro privé bloqué</string>
     <string name="blacklist_message_notification_unknown_number">Message d\'un numéro inconnu %s bloqué</string>
     <string name="blacklist_message_notification_multiple"><xliff:g id="count">%d</xliff:g> messages ont été bloqués</string>
     <string name="blacklist_notification_list_private">Privé</string>
     <string name="unblock_number">Débloquer</string>
+    
+    <!-- Sprint MWI Quirk: Phantom message wait indicator workaround -->
+    <string name="mwi_notification_title">Indicateur de message d\'attente</string>
+    <string name="mwi_notification_summary">Voir le message de notification d\'attente de messagerie vocale</string>
+
+
+    <!-- Permission for notification-bar network toggle -->
+    <string name="perm_change_mobile_network">changer le mode réseau (2G/3G)</string>
+    <string name="perm_change_mobile_network_desc">Permet à l\'application de modifier les données entre 2G et 3G de données à tout moment. 3G est plus rapide, mais consomme plus de batterie et peut entraîner des frais supplémentaires.</string>
+
+
+    <!-- My Phone Number -->
+    <string name="phone_number_label">Mon numéro de téléphone</string>
+    <string name="phone_number_summary">Entrer le numéro de téléphone de ce téléphone</string>
+    <string name="msisdn_alpha_tag" translatable="false">Ligne 1 voix</string>
+
+
+    <!-- Noise suppression -->
+    <string name="noise_suppression_title">Suppression du bruit</string>
+    <string name="noise_suppression_summary">Activer la suppression du bruit pour les appels</string>
+
+
+    <!-- Mobile network settings, preferred network mode -->
+     <string name="preferred_network_mode_td_scdma_lte_cdma_evdo_gsm_wcdma" translatable="false">TD-SCDMA/LTE/CDMA/EvDo/GSM/WCDMA</string>
+     <string name="preferred_network_mode_td_scdma_cdma_evdo_gsm_wcdma" translatable="false">TD-SCDMA/CDMA/EvDo/GSM/WCDMA</string>
+     <string name="preferred_network_mode_td_scdma_gsm_wcdma_lte" translatable="false">TD-SCDMA/GSM/WCDMA/LTE</string>
+     <string name="preferred_network_mode_td_scdma_wcdma_lte" translatable="false">TD-SCDMA/WCDMA/LTE</string>
+     <string name="preferred_network_mode_td_scdma_gsm_wcdma" translatable="false">TD-SCDMA/GSM/WCDMA</string>
+     <string name="preferred_network_mode_td_scdma_gsm_lte" translatable="false">TD-SCDMA/GSM/LTE</string>
+     <string name="preferred_network_mode_td_scdma_gsm" translatable="false">TD-SCDMA/GSM</string>
+     <string name="preferred_network_mode_td_scdma_lte" translatable="false">TD-SCDMA/LTE</string>
+     <string name="preferred_network_mode_td_scdma_wcdma" translatable="false">TD-SCDMA/WCDMA</string>
+     <string name="preferred_network_mode_td_scdma_only">TD-SCDMA only</string>
+     <string name="preferred_network_mode_lte_wcdma" translatable="false">LTE/WCDMA</string>
+     <string name="preferred_network_mode_lte" translatable="false">LTE</string>
+     <string name="preferred_network_mode_global">Global</string>
+     <string name="preferred_network_mode_gsm_wcdma_lte" translatable="false">GSM/WCDMA/LTE</string>
+     <string name="preferred_network_mode_cdma_lte_evdo" translatable="false">CDMA + LTE/EvDo</string>
+     <string name="preferred_network_mode_cdma_evdo_gsm_wcdma" translatable="false">CDMA/EvDo/GSM/WCDMA</string>
+     <string name="preferred_network_mode_evdo_only">EvDo only</string>
+     <string name="preferred_network_mode_cdma_without_evdo">CDMA w/o EvDo</string>
+     <string name="preferred_network_mode_cdma_evdo_auto">CDMA/EvDo auto</string>
+     <string name="preferred_network_mode_gsm_wcdma_auto">GSM/WCDMA auto</string>
+     <string name="preferred_network_mode_wcdma_only">WCDMA only</string>
+     <string name="preferred_network_mode_gsm_only">GSM only</string>
+     <string name="preferred_network_mode_gsm_wcdma_preferred">GSM/WCDMA preferred</string>
+     
 </resources>
+
